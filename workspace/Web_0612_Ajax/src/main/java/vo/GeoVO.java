@@ -15,6 +15,5 @@ public class GeoVO {
 	}
 	public void setLng(String lng) {
 		this.lng = lng;
-	}
-	
+	}	
 }
