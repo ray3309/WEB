@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.container {
+	position: relative;
+	border: 1px solid red;
+	width: 800px;
+	height: 800px;
+	color: red;
+}
+
+.container div {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.black-box {
+	/*background: black;*/
+	background:black;
+	z-index: 1;
+}
+
+.gray-box {
+	/*background: gray;*/
+	background:gray;
+	color:red;	
+	z-index: 3;
+}
+
+.green-box {
+	/*background: green;*/
+	background:green;
+	color:red;
+	left: 100px;
+	top: 100px;
+	z-index: 2;
+}

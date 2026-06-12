@@ -1,0 +1,22 @@
+CREATE TABLE product(
+num NUMBER CONSTRAINT product_num_pk PRIMARY key,
+ptitle VARCHAR2(100) NOT null,
+pcont VARCHAR2(400),
+price NUMBER(10),
+img VARCHAR2(50),
+pdate date
+);
+
+CREATE SEQUENCE product_seq
+INCREMENT BY 1 START WITH 1;
+
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '필기구 셋트' , '가성비 굿', 50000, 'prod1.jpg', SYSDATE);
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '컨트롤러(PS5)' , '플스5 컨트롤러 Bad!!', 60000, 'prod2.jpg', SYSDATE);
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '컨트롤러(XBOX)' , '엑시엑 컨트롤러 굿!!', 60000, 'prod3.jpg', SYSDATE);
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '기계식 키보드' , '경쾌한 타음', 70000, 'prod4.jpg', SYSDATE);
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '트랙볼' , '손목이 안아파', 80000, 'prod5.jpg', SYSDATE);
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '노트북 쿨러' , '쿨링 성능 굿', 100000, 'prod6.jpg', SYSDATE);
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '메모리' , '속도 빠른 메모리', 120000, 'prod7.jpg', SYSDATE);
+INSERT INTO PRODUCT VALUES (product_seq.NEXTVAL, '맥북' , '그지 같은 맥북', 150000, 'prod8.jpg', SYSDATE);
+
+COMMIT;

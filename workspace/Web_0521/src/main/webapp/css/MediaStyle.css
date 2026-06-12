@@ -1,0 +1,29 @@
+@charset "UTF-8";
+p{
+	/*
+		태그의 글자 크기를 기본 글자 크기의 1배로 설정
+		1rem = 루트 요소(html)의 font-size 기준
+		=> 보통 브라우저 기본값인 16px이므로, 1rem = 16px
+	*/
+	font-size: 1.5rem;
+}
+
+.top{
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;	/*vh == Viewport Height의 100%를 다 사용*/
+	
+	background: url(../images/gugugaga2.jpg) no-repeat fixed;
+	background-size: cover;
+}
+
+h1{
+	font-size: 4rem;
+	color: red;
+}

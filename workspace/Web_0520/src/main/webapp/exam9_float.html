@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exam9_float</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+	href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap"
+	rel="stylesheet">
+<style>
+nav ul {
+	list-style: none; /* 불릿이나 숫자 번호 없앰 */
+}
+
+nav ul li {
+	float: left;
+	width: 100px; /* 너비 - 100px */
+	height: 40px; /* 높이 - 40px */
+	line-height: 40px; /* 세로로 중앙 배치 40px */
+	text-align: center; /* 가로로 중앙 배치 */
+	margin: 10px; /*  마진 - 10px */
+	border: 1px solid #222; /*  테두리 - 1px 검은 실선 */
+}
+
+a {
+	text-decoration: none; /* 텍스트 링크 밑줄 없애기 */
+}
+
+nav ul li:hover {
+	background: orange;
+	cursor: pointer;
+}
+
+.cls {
+	clear: both;
+	padding-top: 20px;
+}
+
+.gasoek-one-regular {
+	font-family: "Gasoek One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">메뉴 1</a></li>
+			<li><a href="#">메뉴 2</a></li>
+			<li><a href="#">메뉴 3</a></li>
+			<li><a href="#">메뉴 4</a></li>
+		</ul>
+	</nav>
+	<div class="cls"
+		style="background: orange; width: 300px; margin-left: 50px">*
+		일본에서 <b class="gasoek-one-regular">쌀값이 급등하고</b> 있는 가운데</div>
+</body>
+</html>

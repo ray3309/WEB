@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1>표에서 원하는 특정 열을 제어하기 위한 colgroup</h1>
+	<h2>colgroup</h2>
+	<p>반드시 사용위치는 caption뒤에서</p>
+	<table>
+		<caption>선물용과 가정용 상품 구성</caption>
+		<colgroup>
+			<col style="background-color: #eee">
+			<col style="background-color: orange;">
+			<col style="width: 150px" span="2"> <!-- span:합치기 -->
+		</colgroup>
+			<thead>
+				<tr>
+					<th>용도</th>
+					<th>중량</th>
+					<th>갯수</th>
+					<th>가격</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th rowspan="2">선물용</th>
+					<th>중량 3kg</th>
+					<th>13~16과</th>
+					<th>35000</th>
+				</tr>
+				<tr>
+	<!-- 			<th>선물용</th> -->
+					<th>중량 5kg</th>
+					<th>13~16과</th>
+					<th>33000</th>
+				</tr>
+				<tr>
+					<th rowspan="2">가정용</th>
+					<th>중량 3kg</th>
+					<th>13~16과</th>
+					<th>35000</th>
+				</tr>
+				<tr>
+	<!-- 			<th>가정용</th> -->
+					<th>중량 3kg</th>
+					<th>13~16과</th>
+					<th>35000</th>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th colspan="4">전체상품구성</th>
+				</tr>
+			</tfoot>
+	</table>
+</body>
+</html>

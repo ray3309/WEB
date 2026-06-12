@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/*요소를 선택자로 제어하기*/
+div { /*div는 1개밖에 없기때문에 */
+	width: 640px;
+	margin: 20px auto;
+	padding: 15px;
+	background-color: #f9f9f9;
+	border: 2px solid;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+	text-align: center;
+}
+div h1{/*자식 선택자, div내부에 있는 h1을 가르킴*/
+	color: aqua;
+}
+div video{
+	width: 600px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+<body>
+<div>
+	<h1>Video</h1>	
+<!-- 
+poster = "비디오파일주소" : 비디오썸네일
+muted="muted" : 무음
+브라우저 정책에 의해서 자동재생을 하려고 할때 음소거를 해줘야 가능함
+autoplay : 자동재생
+ -->
+ <video src="mp4/flight.mp4" controls="controls" width="600"
+ 		poster="img/olgo.png" id="v1" autoplay muted="muted"></video>
+</div>
+<!-- 유튜브 영상 다운받아서 비디오태그로 -->
+</body>
+</html>

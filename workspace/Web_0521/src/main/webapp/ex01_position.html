@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex01_position</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+	div{
+		width: 300px;
+		height: 200px;
+		background-color: #eee;
+		border: 1px solid #ccc;
+		line-height: 2;
+	}
+	#static{	
+		/*
+			position : 문서 흐름(위에서 아래, 왼쪽에서 오른쪽)에 따라 배치됨
+						top, left같은 위치 속성 무시
+		*/
+		position: static;
+		background-color: lime !important;	
+	}
+	
+	#relative-1{
+		position: relative;
+		background-color: skyblue !important;		
+	}
+	
+	#relative-2{	
+		position: relative;
+		top: 50px;
+		left: 100px; /* 왼족에서 100px 떨어지게 */
+		background-color: yellow !important;
+			
+	}
+	
+	#fixed{
+		width: 150px; height: 150px; background-color: red;
+		color: white;
+		position: fixed;
+		top: 30px;	/* 위에서 30px 떨어지게 */
+		right: 30px /* 오른쪽에서 30px 떨어지게 */
+		
+	}
+</style>
+</head>
+<body>
+	<div id="static">static(기본값)</div>
+	<div id="relative-1"> ICTPassword</div>
+	<div id="relative-2"> ICTPassword</div>
+	<br><br><br><br>
+	<div id="fixed">Fixed</div>
+</body>
+</html>

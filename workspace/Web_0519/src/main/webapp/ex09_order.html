@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#wrap{
+	width: 640px;
+	margin: 20px auto;
+	padding: 15px;
+}
+#wrap table{
+	border-collapse: collapse;
+}
+#wrap td,th{
+	border : 1px solid #ddd;
+	padding:  8px;
+}
+#wrap tbody tr:hover{
+	background-color: #ddd;
+	cursor: pointer;
+}
+#wrap tbody tr:nth-child(even) {
+		background-color: #ddd;
+}
+#wrap tbody th{
+	padding-top:12px;
+	padding-bottom: 12px;
+	text-align: center;
+	background-color: #04AA2D;
+	color: white;
+}
+</style>
+</head>
+<body>
+<div id = "wrap">
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">주문서</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>주문자</th>
+				<th>김씨</th>
+			</tr>
+			<tr>
+				<th>품목</th>
+				<th>로봇청소기</th>
+			</tr>
+			<tr>
+				<th>가격</th>
+				<th>30만원</th>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="2" style="text-align: center">
+				<button onclick="location='ex9_Link.html'">확인</button></th>
+				<!--onclick="location='주소'" : 버튼눌렀을때 주소로 이동  -->
+			</tr>
+		</tfoot>
+	</table>
+</div>
+</body>
+</html>

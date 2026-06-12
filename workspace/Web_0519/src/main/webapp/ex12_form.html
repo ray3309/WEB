@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div style="width: 500px; margin: auto;">
+		<h1>메모 작성 폼 데모</h1>
+		<form action="memoAdd" method="post">
+			<p>
+				제목 :<input type="text" name="title" id="title" required="required">
+				<!-- required="required" : 반드시 값을 입력해야함 -->
+			</p>
+			<p>
+				작성자 :<input type="text" name="writer" id="writer">
+			</p>
+			<p>
+				나이 :<input type="number" name="age" id="age" min="5" value="20">
+			</p>
+			<p>
+				성별 :<select name="gender" id="gender">
+					<option value="남자">남성</option>
+					<option value="여자" selected="selected">여성</option>
+					<!-- select : 요소선택 / option value1 . . .  -->
+					<!-- selected="selected" 가 할당된 값이 디폴트 값으로 먼저 지정됨 -->
+				</select>
+			</p>
+			<p>
+				취미: <input type="checkbox" name="hobby" value="독서" checked="checked">
+				독서 <input type="checkbox" name="hobby" value="등산"> 등산 <input
+					type="checkbox" name="hobby" value="풋살"> 풋살 <input
+					type="checkbox" name="hobby" value="글쓰기"> 글쓰기 <input
+					type="checkbox" name="hobby" value="발레" checked="checked">
+				발레
+				<!-- type="checkbox" 체크박스 / checked="checked"체크된게 디폴트값 -->
+			</p>
+			<p>내용</p>
+			<p>
+				<textarea rows="10" cols="30" name=""></textarea>
+			</p>
+			<p>
+				상태: <img src="img/s1.png"> <input type="radio" name="status" value="1" checked="checked"> 
+					 <img src="img/s2.png"> <input type="radio" name="status" value="2"> <img
+					src="img/s3.png"> <input type="radio" name="status" value="3">
+			</p>
+			<p>
+				날짜선택: <input type="date" name="mdate">
+			</p>
+			<p>
+				색상선택: <input type="color" name="col">
+			</p>
+			<p>
+				파일선택: <input type="file" name="fname">
+			</p>
+			<p><input type="submit" value="입력"></p>
+		</form>
+		<audio src="mp4/spring.mp3" controls="controls"></audio>
+	</div>
+</body>
+</html>

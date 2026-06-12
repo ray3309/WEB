@@ -1,0 +1,31 @@
+@charset "UTF-8";
+h1{
+	color: skyblue;
+	text-align: center;
+}
+
+h2{
+	font-family: 궁서,"맑은 고딕";
+	font-style: oblique;
+	font-weight: lighter;	
+}
+
+p{
+	color: red;
+	font-size: 20px;
+}
+
+ul {
+	list-style: none !important; display: flex !important;
+}
+
+li{
+	border: 1px solid #222 !important; padding: 10px 20px !important; margin-right: 10px !important;
+}
+
+a{
+	text-decoration: none !important;
+}	
+
+
+

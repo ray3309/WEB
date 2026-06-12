@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex08_border</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+img {
+	width: 200px; height: 250px;
+}
+/*이미지 꼭짓점을 둥글게 처리하기 */
+.round{
+	border-radius: 25px;  /* 네 방향 꼭짓점을 둥글게 */
+}
+/*이미지를 원형으로 표시하기 */
+.circle { border-radius: 50%; }
+.corner {
+	border: 2px solid gray;
+	border-top-left-radius: 150px; /* 왼쪽 위 꼭짓점만 둥글게 */
+	/* 오른쪽 위 꼭짓점만 둥글게 border-top-right-radius:20px; */
+	border-bottom-right-radius: 150px;
+}
+</style>
+</head>
+<body>
+	<!--  cat이미지를 불러오기  -->
+	<img alt="" src="images/cat1.jpg" class="round"><br>
+	<img src="images/cat2.jpg" class="circle"><br>
+	<img src="images/cat3.jpg" class="corner">
+</body>
+</html>

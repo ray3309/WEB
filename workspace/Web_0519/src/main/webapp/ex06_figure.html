@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/* 요소{style실행문1; style실행문2; .....} */
+/* -요소에 클래스들을 css에서 인식 */
+/* .클래스명{} */
+.img{
+	filter : grayscale(100%);
+	transition : filter 0.5s;
+	width : 200px;
+	height : 180px;
+} 
+/* img에 마우스를 올렸을때 효과주기 */
+.img:hover {
+	filter :grayscale(0%);
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1>Figure</h1>
+	<h2>Figure 태그는 도표나 일러스트 이미지 소스코드등 독립된 컨텐츠를 나타냄</h2>
+	<figure> 
+		<!-- id는 객체에게 부여하는 고유번호라면 -->
+		<!-- class는 비슷한 타입의 객체들을 그룹지어 관리하는 태그 -->
+		<!-- java의 list와 비슷함 -->
+		<img alt="유채꽃" src="img/images1.jpg" class="img">
+		<figcaption>유채꽃 이뻐요</figcaption>
+	</figure>
+	<figure>
+		<img alt="해바라기꽃" src="img/images2.jpg" class="img">
+		<figcaption>해바라기꽃 이뻐요</figcaption>
+	</figure>
+		<figure>
+		<img alt="제주말" src="img/images3.jpg" class="img">
+		<figcaption>제주도에서 유명한 것</figcaption>
+	</figure>
+	<figure>
+		<img alt="초가집" src="img/images4.jpg" class="img">
+		<figcaption>초가집입니다</figcaption>
+	</figure>
+	<hr>
+	<figure>
+		<img alt="유채꽃" src="img/images1.jpg" class="img">
+		<img alt="해바라기꽃" src="img/images2.jpg" class="img">
+		<img alt="제주말" src="img/images3.jpg" class="img">
+		<img alt="초가집" src="img/images4.jpg" class="img">
+		<figcaption>제주도</figcaption>
+	</figure>
+
+</body>
+</html>

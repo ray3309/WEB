@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style >
+#obj{
+	width: 900px; height: 800px;
+
+}
+#emb1{
+	width: 900px; height: 800px;
+	border: 2px solid #4CAF50;
+	border-radius: 10px;
+	padding: 10px;
+	background: #f9f9f9;
+}
+</style>
+</head>
+<body>
+<h1>멀티미디어 파일을 삽입하는 object,embed</h1>
+<h2>object:오디오,비디오,pdf등 멀티미디어 파일을 불러올때 사용</h2>
+
+<div>
+	<object id="obj" data="pdf/product.pdf"></object>
+</div>
+
+<div>
+	<object id="emb1" data="mp4/flight.mp4"></object>
+</div>
+
+<div>
+	<!-- object data="mp4/flower.mp4" controls ="controls"></object> -->
+	<object data="mp4/flower.mp4"></object>
+</div>
+</body>
+</html>

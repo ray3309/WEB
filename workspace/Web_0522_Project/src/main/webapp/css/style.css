@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap')
+	;
+
+* {
+	/* 브라우저 기본값 초기화*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*박스 영역은 테두리 까지만*/
+}
+
+a {
+	text-decoration: none;
+}
+
+#container {
+	margin: 0 auto;
+	width: 1200px;
+	background-color: white;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	background-color: gray;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#Logo {
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+	padding-left: 20px;
+	color: Lime;
+	flex-shrink: 0;
+}
+
+nav {
+	height: 100px;
+	padding-top: 0;
+	display: flex;
+	align-items: center;
+}
+
+#topMenu {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+#topMenu > li {
+	position: relative;
+	list-style: none;
+}
+
+#topMenu > li > a {
+	display: block;
+	font-size: 1.2em;
+	color: white;
+	font-weight: 600;
+	padding: 20px 25px;
+}
+
+#topMenu>li>a:hover {
+	color: #1fa8f8;
+	text-shadow: -2px #222;
+}
+
+.contents {
+	width: 1000px;
+	margin: 50px auto;
+}
+
+main>section {
+	margin-top: 60px;
+}
+
+main h2 {
+	font-size: 1.5em;
+	line-height: 2.5;
+}
+
+main div {
+	margin-top: 20px;
+}
+
+main h3 {
+	font-size: 1.2em;
+	line-height: 2.2;
+}
+
+.detail p {
+	line-height: 2.0;
+	color: #222;
+}
+
+.detail>img {
+	float: left;
+	margin-right: 50px;
+	border-radius: 20px;
+	width: 400px;
+	height: 200px;
+}
+
+.schedule h4 {
+	font-size: 1.2em;
+}
+
+.schedule ul {
+	list-style: none;
+}
+
+.schedule ul li {
+	line-height: 2;
+}
+
+/* 푸터 영역*/
+footer {
+	margin-top: 100px;
+	width: 1200px;
+	height: 100px;
+	border-top: 2px solid #222;
+}
+
+#footer>li {
+	float: left;
+	position: relative;
+}
+
+#bottomMenu {
+	width: 100%;
+	height: 20px;
+	margin-left: 60px;
+}
+
+#bottomMenu ul {
+	margin-top: 15px;
+	list-style: none;
+}
+
+#bottomMenu ul li {
+	float: left;
+	position: relative;
+	/*float: center;*/
+	padding: 5px 20px;
+	border-right: 1px solid #ddd;
+	align-items: center;
+}
+
+#bottomMenu ul li:Last-child {
+	border: none;
+}
+
+#bottomMenu ul li a, #bottomMenu ul li a:visited {
+	font-size: 15px;
+	color: #666;
+}
+
+/* GRID 격자 모양*/
+.gallery {
+	display: grid;
+	/*빈공간을 자동으로 fill, 화면 크기에 따라 최대 1fr(남은 공간을 균등하게 분배)*/
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	width: 90%;
+	margin: 50px auto;
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	transition: transform, 0.3s ease;
+}
+
+.gallery img:hover {
+	transform: scale(1.05);
+	cursor: pointer;
+}
+
+.gallery h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.custom-form {
+	width: 80%;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+}
+
+.custom-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.custom-form label {
+	display: block;
+	margin: 10px 0 5px;
+	font-weight: bold;
+}
+
+.custom-form input, .custom-form select, .custom-form textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.custom-form button {
+	display: block;
+	width: 100%;
+	padding: 12px;
+	background-color: #045;
+	color: #fff;
+	font-size: 1.1em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.custom-form button:hover {
+	background-color: #1fa8f8;
+}
+/* bootstrap에 배너 이미지에 신규로 클래스를 추가 */
+.banner-img{
+	width: auto;
+	height: 100px; object-fit:contain;  /* 이미지가 영역에 맞게 잘림 */
+}
+
+/* 슬라이드 캡션 글자 스타일 : 기존의 bootstrap 클래스에 추가 및 재정의  */
+.carousel-caption h5 {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+.carousel-caption p {
+  font-size: 1.1em;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.reserve-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+
+.reserve-table th,
+.reserve-table td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+.reserve-table th {
+	background-color: #045;
+	color: white;
+}
+
+.reserve-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.singup-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+
+.singup-table th,
+.singup-table td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+}
+
+.singup-table th {
+	background-color: #045;
+	color: white;
+}
+
+.reserve-table tr:nth-child(even) {
+	background-color: #f9f9f9;
+}

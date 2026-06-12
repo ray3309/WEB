@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex04_boxmodel</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+div {
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+/*박스 모델의 너비와 높이 지정하기*/
+.box1 {
+	width: 400px; /* 고정 너비 */
+	height: 100px; /* 고정 높이 */
+}
+
+.box2 {
+	width: 70%; /* 가변 너비 */
+	height: 100px; /* 고정 높이 */
+}
+#btn1 {
+	font-size: 12px;
+	background: #fff;
+	border: 1px solid #222;
+	/*박스 모델에 그림자 추가하기 */
+	box-shadow: 2px 2px 5px #000;
+}
+#btn2 {
+	padding: 10px 20px; 
+	margin: 10px; 
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+button:hover {
+	cursor: pointer;
+}
+</style>
+</head>
+<!-- 
+블록 레벨 요소
+요소를 삽입했을 때 혼자 한 줄을 차지하는 요소
+• 요소의 너비가 100%
+예) <div>,<p> 등
+<박스 모델>
+실제 콘텐츠 영역, 패딩(padding), 박스의 테두리(border), 
+그리고 마진(margin) 등의 요소로 구성됨.
+개발자 도구 창에서 박스 모델 확인 가능
+1. 웹 브라우저에서 웹 문서 열기
+2. 박스 모델 확인할 부분를 마우스 오른쪽 버튼으로 누른 뒤 [검사] 선택
+3. 개발자 도구 창 위에서 [계산됨] 탭 클릭
+4. 해당 부분의 박스 모델이 그림으로 표시됨
+-->
+<body>
+	<div class="box1">ICT신촌 무중단</div>
+	<div class="box2">ICT신촌 무중단</div>
+	<button id="btn1" onclick="alert('Click1')">Click1</button>
+	<button id="btn2" onclick="alert('Click1')">Click2</button>
+</body>
+</html>

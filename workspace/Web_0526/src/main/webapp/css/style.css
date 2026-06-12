@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+/*
+ul{
+	list-style: none;
+}
+
+li{
+	width: 120px; display: inline-block; margin: 10px;
+}
+
+li a{
+	padding: 5px 20px; font-size: 14px; 
+	text-decoration: none;
+	font-weight: bold;
+	}
+
+a[href]{
+	background-color: orange;
+	border: 1px solid #ccc;
+	font-weight: normal;
+}
+
+.flat{
+	background: #eee;
+	border: 1px solid #222;	
+}
+
+// a태그에서 class 속성 값에 button이 포함된 요소에 스타일 지정
+a[class ~= "button"]{
+	box-shadow: rgba(0,0,0,0.5) 4px 4px;
+	background-color: orange;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-weight: normal;
+}
+
+a[title |= "us"]{
+	
+}
+
+a[title |= "jap"]{
+	
+}
+
+a[title ^= "eng"]{
+	
+}
+
+a[href $= xls]{
+	
+}
+
+a[href *= xls]{
+	
+}
+
+//ex03_child_style
+body {
+	background-color:  #ccc;
+}
+
+section { width: 600px; margin: 20px auto;}
+p{width:500px; padding: 10px; background-color: red; color:white;margin: 20px auto}
+section p{width:500px; padding: 10px; background-color: #fff; line-height: 2;}
+//section 요소의 자식 P요소에 적용
+section > p {color: orange;}
+
+
+.container { width: 800px; height: 200px; margin: 20px auto;}
+.origin{ width: 100px; height: 100px; border: 1px solid black; float: left; margin: 40px;}
+
+.origin > div { width: 100px; height: 100px; background-color: orange;}
+
+#movex:hover{
+	transform: transLateX(50px);
+	cursor: pointer;
+}
+
+#movey:hover{
+	transform: transLateY(50px);
+	cursor: pointer;	
+}
+
+#movexy:hover{
+	transform: transLate(10px, 20px);
+	cursor: pointer;	
+}
+
+#scalex:hover{
+	transform: transLateX(50px);
+	cursor: pointer;
+}
+
+#scaley:hover{	
+	transform: transLateY(50px);
+	cursor: pointer;	
+}
+
+#scale:hover{
+	transform: transLate(10px, 20px);
+	cursor: pointer;	
+}
+
+.box{
+	margin: 50px auto;
+	width: 100px;
+	height: 100px;
+	background-color: #fb5;
+	border: 1px solid #222;
+	
+	transition: all 2s ease-in;
+}
+
+.box:hover{	
+	width: 200px;
+	height: 200px;
+	background-color: #f50;
+	transform: rotate(270deg);
+}
+*/
+
+#container{	max-width: 1000px; margin: 20px auto; width: 100%;}
+h1{ text-align: center;}
+.prod-list{
+	list-style: none; padding: 0; display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.prod-list li {
+	padding: 0;
+	margin: 10px;
+	position : relative;
+	overflow: hidden;
+	flex-basis: calc(33.333% - 20px);
+}
+
+.prod-list img {
+	width: 100%; height: auto; z-index: 5;
+}
+
+/* 제품을 설명하는 영역 부모가 relative 이므로 absolute*/
+.prod-list .caption{
+	position: absolute;
+	top: 200px; width: 100%; height: 200px;
+	padding-top: 20px;
+	background: rgba(0,0,0,6);
+	opacity: 0;
+	transition: all 0.6s ease-in-out;
+	z-index: 10;
+}
+
+.prod-list li:hover .caption{
+	opacity: 1; /* 보이게 설정 */
+	transform: translateY(-200px);
+	cursor: pointer;
+}
+
+.prod-list .caption h2, .prod-list .caption p {
+	color : #fff;
+	text-align: center;
+}

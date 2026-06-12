@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>form데이터를 서버로 전송하기위한 목적</h1>
+<h1>form의 기본 전송방식[method]은 get이다</h1>
+<!-- action="" 데이터를 전송할 서버의 주소 -->
+<!-- method="" :전송방식 get/post 보안상의 이유로 대부분 post -->
+<form action="formRes" method="post">
+	<p>메세지1: <input type="text" name="msg1" id="msg1" ></p>
+	<p>메세지2: <input type="text" name="msg2" id="msg2" ></p>
+	<p>이름 : <input type="text" name="name" ></p>
+	<p>나이 : <input type="text" name="age" ></p>
+	<input type="submit" value="전송">
+</form>
+</body>
+</html>

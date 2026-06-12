@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited, a:active {
+	color: #fff;
+}
+
+body {
+/*
+MS에서 제공해주는 고해상도 폰트 임. 이게 없으면 다음 sans-serif 계열의 시스템 기본 글꼴
+sans-serif는 "획 끝에 장식이 없는 글꼴"을 의미함. (고딕체 같은 느낌)
+산세리프 계열의 기본 글꼴
+*/
+	font-family: 'Segoe UI', sans-serif;
+	background-color: #000;
+	color: #fff;
+}
+
+#contents {
+	background:
+		url('images/bg-2.jpg')
+		no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	max-width: 1000px;
+	height: 500px;
+	margin: 50px auto;
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	font-size: 70px;
+	color: white;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	font-size: 36px;
+	color: #ffcc00;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.cta {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	padding: 15px 30px;
+	font-size: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.cta:hover {
+	background-color: #fff;
+	color: #000000;
+}
+
+.cta:hover a {
+	color: #000;
+}
+</style>
+</head>
+<body>
+	<div id="contents">
+		<h1>ICT Password</h1>
+		<h2>CSS를 복습하자!</h2>
+		<div class="cta">
+			<a href="">지금 시작하기</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>notice</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+	box-sizing:  border-box;
+}
+body {
+	display: flex; /*플렉스 컨테이너*/
+	justify-content: center; /* 주축(수평)정렬 */
+	align-items: center; /* 교차축(수직) 정렬 */
+	min-height: 100vh; /*최소높이*/
+}
+#container{
+	width: 250px; height: 375px; padding: 100px 50px;
+	border:  1px solid black;
+	background: url("img/notice.jpg") no-repeat left top;
+	background-size: auto;
+}
+</style>
+
+</head>
+<body>
+<div id="container">
+	<h1>공지사항</h1>
+	<p>텍스트 1</p>
+	<p>텍스트 2</p>
+	<hr>
+	<input type="button" value="돌아가기" onclick="window.open('ex14_input.html')">
+</div>
+</body>
+</html>

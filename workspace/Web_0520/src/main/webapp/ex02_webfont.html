@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex02_webfont</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--  https://cdnjs.com/libraries/font-awesome
+	  1.CDN : https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css
+	  2.https://fontawesome.com/ -> 'home'검색 -> free
+ -->
+<style>
+	ul { list-style: none; display: flex;}
+	li { border: 1px solid #222; padding: 10px 20px; margin-right: 10px}
+	a { text-decoration: none;}
+	a:link,a:visited{ /*링크나 visit 하나의 색상으로 초기화 */
+		color:#222;
+	}
+	a:hover {
+	 /*a 태그에 마우스를 올렸을 때*/
+	 color:orange;
+	}
+	h1{
+		/*rgb() : red,green,blue 0 : 하나도 섞이지 않은 값 , ~ 255 가득 섞였을 때 값*/
+	/* 불투명도rgb(0,0,255,) 1:완전 불투명 ,0 투명 0 ~ 1 */
+		color: rgb(0,0,255,0.5)
+	}
+	
+</style> 
+<!-- 외부 라이브러리를 불러 오는 방법 CDN - 캐시가능  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+</head>
+<body>
+<h1>네비게이션 아이콘</h1>
+<nav>
+	<ul>
+		<li><i class="fa-solid fa-house"></i><a href="ex1_css.html">메뉴 1</a></li>
+		<li><i class="fa-regular fa-snowflake"></i><a href="">메뉴 2</a></li>
+		<li><i class="fa-regular fa-snowflake"></i><a href="">메뉴 3</a></li>
+	</ul>
+</nav>
+</body>
+</html>

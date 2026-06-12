@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 수정본</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        /* CSS를 사용하면 HTML 코드가 훨씬 간결해집니다 */
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="5">게시판</th>
+            </tr> <!-- 닫는 태그 수정 -->
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+                <th>날짜</th>
+            </tr> <!-- 닫는 태그 수정 -->
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>반갑습니다.</td>
+                <td>희상</td>
+                <td>1000</td>
+                <td>2026-05-18</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2와3병합</td>
+                <td>잘가세요.</td>
+                <td>세롬</td>
+                <td>5000</td>
+                <td>2026-05-18</td>
+            </tr>
+            <tr>                
+                <td>어서오세요.</td>
+                <td>세롬</td>
+                <td>7000</td>
+                <td>2026-05-18</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">
+                    <button type="button">작성하기</button>
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex01_css</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+	p {
+		color: red;
+		font-size: 20px;
+	}
+	h1{
+	background-color: brown !important;
+	color:black !important;
+	}
+	h2{
+		font-family: 궁서,"맑은 고딕";
+		font-style: oblique;
+		font-weight: lighter;
+		/*
+			 100 ~ 900
+			 normal : 400
+			 bold : 굵게 (700)
+			 bolder: 원래보다 더 굵게 
+			 lighter: 원래보다 더 가늘게
+	 	*/
+	}
+</style>
+</head>
+<body>
+<h1 style="color: white; background-color: #ffccdd">ICT01</h1>
+<p style="color: white; background-color: pink">CSS는 외부,내부,인라인스타일,
+!important :어떤 스타일보다 우선순위높다.</p>
+<p>CSS는 외부,내부,인라인스타일</p>
+<h2>CSS는 외부,내부,인라인스타일</h2>
+<ul>
+	<li>em 단위는 부모 태그의 폰트 크기를 기준으로 상대적인 값을 지정한다.</li>
+	<li>p = 20px => 20 * 1.5 = 30px </li>
+</ul>
+<p>내일은 목요일 비가 올까요? <span style="font-size: 1.5em; color:green">안올까요?</span>
+맞춰 보세요
+</p>
+</body>
+</html>

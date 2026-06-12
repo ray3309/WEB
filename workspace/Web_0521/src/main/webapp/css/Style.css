@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 브라우저의 기본 값을 초기화*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#contents{
+	background: url("../images/gugugaga2.jpg") no-repeat;
+	background-size: cover;
+	width: 1024px; height: 768px;
+	margin: 0 auto;
+	position: relative; /* 포함하고 있는 부모를 relative로 잡고 */	
+}
+
+h1{
+	color: lime;
+	font-size: 120px;
+	text-shadow: 2px 3px 0 #000;	
+	position: absolute; /* 자식이 absolute면 부모 경계안에서 절대좌표가 인식*/
+	right: 500px;
+	bottom: 100px;
+}
