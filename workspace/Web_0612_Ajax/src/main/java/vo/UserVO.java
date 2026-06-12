@@ -8,8 +8,7 @@ public class UserVO {
 	private AddressVO address;
 	private String phone;
 	private String website;
-	private CompanyVO company;
-	
+	private CompanyVO company;	
 	
 	public int getId() {
 		return id;
