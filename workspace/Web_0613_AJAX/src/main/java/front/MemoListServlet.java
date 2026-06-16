@@ -39,11 +39,11 @@ public class MemoListServlet extends HttpServlet{
 		resp.setCharacterEncoding("utf-8");
 		
 		List<MemoVO> listme = new ArrayList<MemoVO>();
-		for(int i=0; i< 3; i++) {
+		for(int i=0; i< 10; i++) {
 		MemoVO v = new MemoVO();
 			v.setNum(i);
 			v.setMdate("data");
-			v.setMerip("ip");
+			v.setMerip("192.168.0." + i+1);
 			v.setWriter("테스형" + i);
 			v.setContent("내용" + i);
 			listme.add(v);
@@ -51,7 +51,8 @@ public class MemoListServlet extends HttpServlet{
 
 		PrintWriter out = resp.getWriter();
 		ObjectMapper om = new ObjectMapper();
-		String jsonResp = om.writeValueAsString(listme);
+		String jsonResp = om.writeValueAsString(listme);		
+
 		out.println(jsonResp);		
 	}
 	
