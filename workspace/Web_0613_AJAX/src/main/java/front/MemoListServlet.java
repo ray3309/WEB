@@ -41,11 +41,11 @@ public class MemoListServlet extends HttpServlet{
 		List<MemoVO> listme = new ArrayList<MemoVO>();
 		for(int i=0; i< 10; i++) {
 		MemoVO v = new MemoVO();
-			v.setNum(i);
+			v.setNum(i+1);
 			v.setMdate("data");
 			v.setMerip("192.168.0." + i+1);
-			v.setWriter("테스형" + i);
-			v.setContent("내용" + i);
+			v.setWriter("테스형" + (i+1));
+			v.setContent("내용" + (i+1));
 			listme.add(v);
 		}
 

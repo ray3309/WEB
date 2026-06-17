@@ -19,7 +19,7 @@
 	<section class="gallery">
 		<%for(GroupTourVO e : plist) { %>
 		<figure>
-			<img alt="<%=e.getTourTitle()%>>" src=images/<%=e.getTourImagePath()%>>
+			<img alt="<%=e.getTourTitle()%>>" src="images/"<%=e.getTourImagePath()%>>
 			<figcaption><%=e.getTourTitle() + "/" + e.getTourWriter()%></figcaption>
 		</figure>
 		<%} %>

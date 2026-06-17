@@ -12,13 +12,43 @@
 		<welcome-file>default.xhtml</welcome-file>
 	</welcome-file-list>
 	
+	<!-- ServletContext : context-param Set Global -->
+	<context-param>
+		<description>회사명</description>
+		<param-name>company</param-name>
+		<param-value>ITDC</param-value>
+	</context-param>
+	
 	<servlet>
 		<servlet-name>life</servlet-name>
-		<servlet-class>ex1.ServletLifeCycle</servlet-class>
+		<servlet-class>ex1.ServletLifeCycle</servlet-class>		
+	</servlet>
+	
+	<!-- servletConfig Setting : init-param Set -->
+	<servlet>
+		<servlet-name>life2</servlet-name>
+		<servlet-class>ex1.ServletCfgCtx</servlet-class>
+		<init-param>
+			<param-name>email</param-name>
+			<param-value>ray3309@gmail.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>tel</param-name>
+			<param-value>02-3662-0703</param-value>
+		</init-param>
+		<init-param>
+			<param-name>fax</param-name>
+			<param-value>02-3662-0702</param-value>
+		</init-param>		
 	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>life</servlet-name>
 		<url-pattern>/life</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>life2</servlet-name>
+		<url-pattern>/life2</url-pattern>
 	</servlet-mapping>
 </web-app>

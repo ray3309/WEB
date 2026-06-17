@@ -11,7 +11,8 @@
 				<h2>사랑하는 사람과 함께 하는 아름다운 섬</h2>
 				<div class="detail">
 					<img src="images/hawaii_merry.jpg">
-					<b><p>럭셔리한 커플 신혼의여행 공간으로 안내합니다.</p></b>
+					<b>
+					<p>럭셔리한 커플 신혼의여행 공간으로 안내합니다.</p></b>
 					<p>신혼의 여행지</p>
 				</div>
 				<div class="schedule">
