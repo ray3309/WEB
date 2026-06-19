@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+<!-- insert 문 
+	#{property} vo.BoardVO getter
+	#{subject} => vo.getSubject();
+ -->
+ 
+ 
+
+<insert id="save" parameterType="bvo">
+	INSERT INTO BOARD VALUES(board_seq.nextVal,#{title},#{writer},#{content},#{pwd},0,#{reip},sysdate)
+</insert>
+
+<select id="list" resultType="bvo">
+	SELECT no,title,writer,content,hit,regdate FROM BOARD ORDER BY 1 DESC
+</select>
+
+<update id="hit" parameterType="int">
+	update board set hit=hit+1 where no=#{no}
+</update>
+
+<select id="detail" parameterType="int" resultType="bvo">
+	SELECT no,title,writer,hit,content,reip,regdate FROM BOARD WHERE no=#{no}
+</select>
+
+<select id="checkpass" parameterType="bvo" resultType="int">
+	select count(*) as cnt from board where no=#{no} AND pwd=#{pwd}
+</select>
+
+<select id="getUpdateDelete" parameterType="int" resultType="bvo">
+	SELECT no,title,writer,hit,content,pwd,reip,regdate FROM BOARD WHERE no=#{no} 
+</select>
+
+<update id="updateBoard" parameterType="bvo">
+	update board set title=#{title}, writer=#{writer}, content=#{content}, pwd=#{pwd}, reip=#{reip}, regdate=sysdate where no=#{no}
+</update>
+
+<delete id="RemoveBoard" parameterType="int">
+	delete from board where no=#{no}
+</delete>
+</mapper>  
